@@ -127,14 +127,70 @@ body {
     width: 500px;
     background-color: #fff;
     color: #333;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    
+    
     padding: 10px;
 }
 .card {
     margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
 }
 
+.hidden {
+    visibility: hidden;
+    height: 0;
+}
+
+.fa {
+    color: #111;
+    padding: 20px;
+    font-size: 25px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+input {
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+}
+
+.btn {
+    width: 100px;
+    background-color: #111;
+    color: #fff;
+    border-radius: 5px;
+    font-family: 'Libre Baskerville', serif;
+	  font-weight:400;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.showcase-form {
+    position: relative;
+    width: 400px;
+    padding: 40px;
+}
+
+.form-control {
+    margin: 30px 0;
+}
+.Footer {
+    
+    text-align:center;
+
+}
 
 /* Media qurey section */
 
@@ -398,10 +454,10 @@ body {
 	text-align: justify;
 	padding-left:15%;
 	padding-right:15%;
-	font-size: 20px;
+    font-size: 20px;
 }
 @media all and (max-width:700px){
 	.myP {
-		padding:2%;
+		padding:7%;
 	}
 }

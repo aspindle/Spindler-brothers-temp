@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="javascript" href="js/index.js">
     <title>Spindler Brothers</title>
@@ -56,7 +56,9 @@
             
             <div class="portfolio-section">
                 <div class="card">
-                <img src="imgs/garcia.png" alt="garcia image">
+                <a href="https://gallant-kirch-690c66.netlify.app" target="_blank">
+                    <img src="imgs/garcia.png" alt="garcia image">
+                </a>
                 </div>
             </div>
 				
@@ -85,16 +87,21 @@
                     </p>
                     <div class="form-control">
                         <input type="text" name="name"
-                        placeholder="Name" required>
-                    </div>
-                    <div class="form-control">
-                        <input type="text" name="company"
-                        placeholder="Company Name" required>
+                        placeholder="Your Name" required>
                     </div>
                     <div class="form-control">
                         <input type="email" name="email"
-                        placeholder="Email" required>
+                        placeholder="Your Email" required>
                     </div>
+                    <div class="form-control">
+                        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+                        <small>Format: 123-456-7889</small><br><br>
+                    </div>
+                    <div class="form-control">
+                        <input type="text" name="text"
+                        placeholder="Your Message" required>
+                    </div>
+                    
                     <input type="submit" value="Send" class="btn btn-primary">
                 </form>
             </div>
@@ -102,7 +109,10 @@
 
         <section class="Footer">
             
-            <p>Follow us on social media!</p>
+            <p>© Copyright SpindlerBrothers.com. All Rights Reserved.</p>
+            <a href="https://twitter.com/alex_spindier" class="fa fa-twitter"></a>
+            <a href="https://www.linkedin.com/in/alex-spindler/" class="fa fa-linkedin"></a>
+            <a href="https://www.instagram.com/alex_spindier/" class="fa fa-instagram"></a>
             
         </section>
     </div>
