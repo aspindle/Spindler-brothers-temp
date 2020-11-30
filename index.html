@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="javascript" href="js/index.js">
     <title>Spindler Brothers</title>
@@ -16,9 +17,9 @@
             <div id="mainListDiv" class="main_list">
                 <ul class="navlinks">
                     <li><a href="#about">About</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
             <span class="navTrigger">
@@ -35,15 +36,75 @@
 		
     <div style="height: 1000px">
         <!-- just to make scrolling effect possible -->
-			
-			<h1 id="about">About us</h1>
-			
-			
+            
+        <section class="AboutUs">
+            <h1 id="about" class="myH2">About us</h1>
+            
+            <div class="socials">
+                <img src="imgs/alex.jpg" alt="alex avatar">
+                <img src="imgs/david.jpg" alt="david avatar">
+            </div>
 				<p class="myP">	
-				Spindler Brothers is a full-service website design agency based in Southern California. Established in November 2020, cofounders (and brothers) Alex and David believe the end user experience is of the utmost importance. Alex graduated with a degree in Computer Science from UC San Diego and David gradutated with a degree in Mathematics from Westmont College in Santa Barbara. Spindler Brothers is eager to  get your next website up and running! </p><p class="myP">
-				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
+                Spindler Brothers is a full-service website design agency based in Southern California. Established in November 2020, cofounders (and brothers) Alex and David believe the end user experience is of the utmost importance. Alex graduated with a degree in Computer Science from UC San Diego and David gradutated with a degree in Mathematics from Westmont College in Santa Barbara. Spindler Brothers is eager to  get your next website up and running! </p>
+                <p class="myP">
+                
+            </p>
+        </section>
+
+        <section class="Portfolio">
+            <h1 id="portfolio" class="myH2">Portfolio</h1>
+            
+            <div class="portfolio-section">
+                <div class="card">
+                <img src="imgs/garcia.png" alt="garcia image">
+                </div>
+            </div>
 				
-			</p>
+        </section>
+
+        <section class="Services">
+            <h1 id="services" class="myH2">Services</h1>
+            
+            
+				<p class="myP">	
+                Services text </p>
+                <p class="myP">
+                
+            </p>
+        </section>
+
+        <section class="Contact">
+            <h1 id="contact" class="myH2">Contact us</h1>
+            
+            <div class="showcase-form card">
+                <h2>Get in Touch!</h2>
+                <form name='contact' method='POST'>
+                    <input type="hidden" name="form-name" value="contact">
+                    <p class="hidden">
+                        <label>Don't fill this out if your human: <input name="bot-field" /></label>
+                    </p>
+                    <div class="form-control">
+                        <input type="text" name="name"
+                        placeholder="Name" required>
+                    </div>
+                    <div class="form-control">
+                        <input type="text" name="company"
+                        placeholder="Company Name" required>
+                    </div>
+                    <div class="form-control">
+                        <input type="email" name="email"
+                        placeholder="Email" required>
+                    </div>
+                    <input type="submit" value="Send" class="btn btn-primary">
+                </form>
+            </div>
+        </section>
+
+        <section class="Footer">
+            
+            <p>Follow us on social media!</p>
+            
+        </section>
     </div>
 
 <!-- Jquery needed -->
@@ -59,6 +120,15 @@
             } else {
                 $('.nav').removeClass('affix');
             }
+        });
+    </script>
+
+    <script>
+        $('.navTrigger').click(function () {
+        $(this).toggleClass('active');
+        console.log("Clicked menu");
+        $("#mainListDiv").toggleClass("show_list");
+        $("#mainListDiv").fadeIn();
         });
     </script>
 </body>
