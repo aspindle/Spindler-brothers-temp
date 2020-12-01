@@ -38,12 +38,28 @@
         <!-- just to make scrolling effect possible -->
             
         <section class="AboutUs">
-            <h1 id="about" class="myH2">About us</h1>
+            <p id="about" class="hidden">test</p>
+            <h1 class="myH2">About Us</h1>
             
             <div class="socials">
-                <img src="imgs/alex.jpg" alt="alex avatar">
-                <img src="imgs/david.jpg" alt="david avatar">
+                
+                <img class="hidden" src="imgs/david.jpg" alt="david avatar">
+                <div class="myContainer">
+                    <img src="imgs/alex.jpg" alt="alex avatar">
+                    <div class="centered">
+                        <a href="https://www.linkedin.com/in/alex-spindler/" target="_blank" class="fa fa-linkedin"></a>
+                    </div>
+                </div>
+                <img class="hidden" src="imgs/david.jpg" alt="david avatar">
+                <div class="myContainer">
+                    <img src="imgs/david.jpg" alt="david avatar">
+                    <div class="centered">
+                        <a href="https://www.linkedin.com/in/davidspindler12345/" target="_blank" class="fa fa-linkedin"></a>
+                    </div>
+                </div>
+                <img class="hidden" src="imgs/david.jpg" alt="david avatar">
             </div>
+            
 				<p class="myP">	
                 Spindler Brothers is a full-service website design agency based in Southern California. Established in November 2020, cofounders (and brothers) Alex and David believe the end user experience is of the utmost importance. Alex graduated with a degree in Computer Science from UC San Diego and David gradutated with a degree in Mathematics from Westmont College in Santa Barbara. Spindler Brothers is eager to  get your next website up and running! </p>
                 <p class="myP">
@@ -52,7 +68,8 @@
         </section>
 
         <section class="Portfolio">
-            <h1 id="portfolio" class="myH2">Portfolio</h1>
+            <p id="portfolio" class="hidden">test</p>
+            <h1 class="myH2">Portfolio</h1>
             
             <div class="portfolio-section">
                 <div class="card">
@@ -65,18 +82,20 @@
         </section>
 
         <section class="Services">
-            <h1 id="services" class="myH2">Services</h1>
+            <p id="services" class="hidden">test</p>
+            <h1 class="myH2">Services</h1>
             
             
 				<p class="myP">	
-                Services text </p>
+                Spindler Brothers currently offers website design services. Our prices vary depending on the scope of the website. Feel free to reach out to us below to discuss further details. </p>
                 <p class="myP">
                 
             </p>
         </section>
 
         <section class="Contact">
-            <h1 id="contact" class="myH2">Contact us</h1>
+            <p id="contact" class="hidden">test</p>
+            <h1 class="myH2">Contact Us</h1>
             
             <div class="showcase-form card">
                 <h2>Get in Touch!</h2>
@@ -109,10 +128,8 @@
 
         <section class="Footer">
             
-            <p>© Copyright SpindlerBrothers.com. All Rights Reserved.</p>
-            <a href="https://twitter.com/alex_spindier" class="fa fa-twitter"></a>
-            <a href="https://www.linkedin.com/in/alex-spindler/" class="fa fa-linkedin"></a>
-            <a href="https://www.instagram.com/alex_spindier/" class="fa fa-instagram"></a>
+            <p>© SpindlerBrothers.com. All Rights Reserved.</p>
+            
             
         </section>
     </div>
@@ -140,6 +157,20 @@
         $("#mainListDiv").toggleClass("show_list");
         $("#mainListDiv").fadeIn();
         });
+    </script>
+
+    <script>
+        $('a[href*="#"]').on('click', function (e) {
+        e.preventDefault()
+
+        $('html, body').animate(
+            {
+            scrollTop: $($(this).attr('href')).offset().top,
+            },
+            500,
+            'linear'
+        )
+        })
     </script>
 </body>
 </html>

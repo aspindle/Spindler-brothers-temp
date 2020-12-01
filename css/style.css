@@ -135,6 +135,7 @@ body {
     margin: auto;
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    overflow: hidden;
 }
 
 .hidden {
@@ -188,8 +189,34 @@ textarea:focus, input:focus{
 }
 .Footer {
     
+    padding: 10px;
+    
     text-align:center;
 
+}
+.myContainer {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.socials {
+    padding-bottom: 25px;
+}
+.socials .myContainer a {
+    width: 150px;
+    height: 150px;
+    padding-top: 150px;
+    opacity: 0%;
+    color: #fff;
+}
+.socials .myContainer a:hover {
+    opacity: 100%;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* Media qurey section */
